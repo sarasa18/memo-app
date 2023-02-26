@@ -1,0 +1,262 @@
+@charset "UTF-8";
+
+$hf_bg: #9daed569;
+$con_bg: #c5cfe1cc;
+/*★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+ header
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ */
+header {
+  background: $hf_bg;
+  border-radius: 15px;
+  padding: 13px 25px;
+  margin: 0 0 4% 0;
+}
+
+.h-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Arvo", serif;
+  color: white;
+  font-size: 32px;
+  letter-spacing: 3px;
+}
+
+.h-flex a {
+  display: block;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background: #040436;
+  text-align: center;
+  transition: all 0.3s ease;
+
+  span {
+    font-family: "Arvo", serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: 0;
+    vertical-align: middle;
+    user-select: none;
+    transition: all 0.4s ease;
+  }
+  &:hover {
+    background: rgba(255, 255, 255, 0.5);
+    span {
+      color: #040436;
+    }
+  }
+}
+
+/*★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+ footer
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ */
+footer {
+  background: $hf_bg;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 30px 0 0 0;
+  small {
+    font-family: "Arvo", serif;
+    color: white;
+    font-size: 10px;
+  }
+}
+
+/*★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+ 共通
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ */
+// 背景
+.allbg {
+  background: url("../img/bg_04.jpg") no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+// ボタン
+.c-btnbox {
+  margin: 15px 0 0 0;
+}
+
+.c-btn {
+  display: inline-block;
+  font-family: "Arvo", serif;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 1px;
+  background: #040436;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 5px 10px;
+  transition: all 0.3s ease;
+  border: none;
+  &:hover {
+    background: $con_bg;
+    color: #040436;
+  }
+}
+
+.d-btn {
+  display: inline-block;
+  font-family: "Arvo", serif;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 1px;
+  background: #68171e;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 5px 10px;
+  transition: all 0.3s ease;
+  border: none;
+  &:hover {
+    background: $con_bg;
+    color: #040436;
+  }
+}
+
+// 文字色
+.col-w {
+  color: white;
+}
+.col-ws {
+  color: white;
+  text-shadow: 0px 0px 7px #040436;
+}
+.col-b {
+  color: #040436;
+}
+
+/*★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+ 下層共通
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ */
+.c-bg {
+  background: $hf_bg;
+  border-radius: 10px;
+  padding: 40px 6%;
+  margin: 20px 0;
+}
+
+/*★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+ index
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ */
+.memo-bg {
+  display: block;
+  background: $con_bg;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 20px 0;
+  transition: all 0.3s ease;
+  &:hover {
+    background: #c5cfe1;
+  }
+}
+
+.date {
+  font-size: 13px;
+  color: #282830;
+}
+
+// ページャー
+.pager-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.pager {
+  user-select: none;
+  display: inline-block;
+  background: $con_bg;
+  border-radius: 5px;
+  padding: 7px 12px;
+  margin: 5px 5px;
+  font-family: "Arvo", serif;
+  transition: all 0.3s ease;
+  &:hover {
+    background: #040436;
+    color: white;
+  }
+}
+.now-page {
+  pointer-events: none;
+  user-select: none;
+  display: inline-block;
+  background: #7ec6ddcc;
+  border-radius: 5px;
+  padding: 7px 12px;
+  margin: 5px 5px;
+  font-family: "Arvo", serif;
+}
+
+/*★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+ input.php
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ */
+.memo_area {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  font-size: 1em;
+  padding: 1em;
+  border: none;
+  color: #040436;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体",
+    "YuGothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ",
+    "Meiryo", sans-serif;
+}
+
+/*★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+ single.php
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ */
+.show-memo {
+  width: 100%;
+  border-radius: 10px;
+  padding: 1em;
+  background: #fff;
+}
+
+/*★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+ responsive
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ */
+@media screen and (max-width: 900px) {
+} /* end @media screen */
+@media screen and (max-width: 768px) {
+} /* end @media screen */
+@media screen and (max-width: 600px) {
+  /*★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+ 共通
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ */
+  // ボタン
+  .c-btn {
+    font-size: 14px;
+  }
+  /* header
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ */
+  header {
+    padding: 10px 20px;
+  }
+
+  h1 {
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+
+  .h-flex a {
+    width: 35px;
+    height: 35px;
+
+    span {
+      font-size: 25px;
+      line-height: 35px;
+    }
+  }
+} /* end @media screen */
+
+/*★★★★★★★★★★★★★★★★      /others responsive end       ★★★★★★★★★★★★★★★★★★★★★★★★★ */
